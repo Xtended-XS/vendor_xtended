@@ -105,12 +105,7 @@ include vendor/xtended/config/version.mk
 
 # GAPPS
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gapps/basic/config.mk)
-endif
-
-# Minimal GAPPS
-ifeq ($(MIN_GAPPS),true)
-$(call inherit-product, vendor/gapps/core/config.mk)
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
 endif
 
 # Do not include art debug targets
