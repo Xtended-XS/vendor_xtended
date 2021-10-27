@@ -15,6 +15,10 @@ ifeq ($(MIN_GAPPS), true)
 XTENDED_BUILD_VARIANT := GAPPS
 endif
 
+ifeq ($(FULL_GAPPS), true)
+XTENDED_BUILD_VARIANT := GAPPS
+endif
+
 # Xtended Release
 ifeq ($(XTENDED_BUILD_TYPE), OFFICIAL)
 
